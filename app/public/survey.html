@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Survey</title>
@@ -8,13 +9,35 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <!-- <style>
+      .jumbotron {
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/30073360_1462566920522422_7114120661199602437_o.jpg?_nc_cat=0&oh=7e493a967901478684b7ef2cfcaccaed&oe=5B63F5D9");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(185, 221, 216);
+    color: white;
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+  </style> -->
+
 </head>
+
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <!-- <a href="/"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span> Search Characters</button></a>
-      <a href="/all"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-th-list"></span> All Characters</button></a> -->
+
     </div>
 
 
@@ -22,32 +45,228 @@
       <div class="col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><strong>Survey</strong></h3>
+            <h3 class="panel-title">
+              <strong>Survey</strong>
+            </h3>
           </div>
           <div class="panel-body">
             <form role="form">
+
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name">
+                <label for="userName">Name</label>
+                <input type="text" class="form-control" id="userName">
               </div>
+
               <div class="form-group">
-                <label for="photo">Photo</label>
-                <input type="text" class="form-control" id="photo">
+                <label for="userPhoto">Photo</label>
+                <input type="text" class="form-control" id="userPhoto">
               </div>
+
+              <div class="form-group">
+                <h3>Question 1</h3>
+                <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <br>
+                <form class="options">
+                  <input class="option" type="radio" value="1" name="question1"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question1"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question1"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question1"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question1"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 2</h3>
+                <label for="question1">Generally speaking, you rely more on your experience than your imagination.</label>
+                <br>
+                <form class="options" id="question2">
+                  <input class="option" type="radio" value="1" name="question2"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question2"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question2"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question2"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question2"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 3</h3>
+                <label for="question1">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <br>
+                <form class="options" id="question3">
+                  <input class="option" type="radio" value="1" name="question3"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question3"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question3"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question3"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question3"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 4</h3>
+                <label for="question1">You rarely do something just out of sheer curiosity.</label>
+                <br>
+                <form class="options" id="question4">
+                  <input class="option" type="radio" value="1" name="question4"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question4"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question4"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question4"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question4"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 5</h3>
+                <label for="question1">People can rarely upset you.</label>
+                <br>
+                <form class="options" id="question5">
+                  <input class="option" type="radio" value="1" name="question5"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question5"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question5"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question5"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question5"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 6</h3>
+                <label for="question1">It is often difficult for you to relate to other people’s feelings.</label>
+                <br>
+                <form class="options" id="question6">
+                  <input class="option" type="radio" value="1" name="question6"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question6"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question6"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question6"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question6"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 7</h3>
+                <label for="question1">In a discussion, truth should be more important than people’s sensitivities.
+                </label>
+                <br>
+                <form class="options" id="question7">
+                  <input class="option" type="radio" value="1" name="question7"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question7"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question7"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question7"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question7"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 8</h3>
+                <label for="question1">You rarely get carried away by fantasies and ideas.</label>
+                <br>
+                <form class="options" id="question8">
+                  <input class="option" type="radio" value="1" name="question8"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question8"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question8"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question8"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question8"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 9</h3>
+                <label for="question1">You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                  not.
+                </label>
+                <br>
+                <form class="options" id="question9">
+                  <input class="option" type="radio" value="1" name="question9"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question9"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question9"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question9"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question9"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
+              <div class="form-group">
+                <h3>Question 10</h3>
+                <label for="question1">You feel more energetic after spending time with a group of people.</label>
+                <br>
+                <form class="options" id="question10">
+                  <input class="option" type="radio" value="1" name="question10"> &nbsp; 1 &nbsp;
+                  <input class="option" type="radio" value="2" name="question10"> &nbsp; 2 &nbsp;
+                  <input class="option" type="radio" value="3" name="question10"> &nbsp; 3 &nbsp;
+                  <input class="option" type="radio" value="4" name="question10"> &nbsp; 4 &nbsp;
+                  <input class="option" type="radio" value="5" name="question10"> &nbsp; 5 &nbsp;
+                </form>
+              </div>
+
             </form>
-            <br>
-            <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire"></span> Submit</button>
+            <div class="text-left">
+              <button type="submit" class="btn btn-primary btn-md" id="submit"> Submit</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-</div>
+  </div>
+
+  <!-- <footer class="footer">
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <hp>
+Friend Finder
+              </hp>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Friend Match</h4>
+      <div class="divider"></div>
+      <h5 id="userMatch"></h5>
+      <img id="userMatchImage" class="materialboxed" width="650" src="">
+    </div>
+    <div class="modal-footer">
+     
+    </div>
+  </div>
 
   <script type="text/javascript">
-  
+
+    $('#submit').on('click', function (event) {
+      event.preventDefault();
+      // Gather user inputs
+      var userInput = {
+        name: $('#userName').val().trim(),
+        photo: $('#userPhoto').val().trim(),
+        scores: [
+        $("input[name=question1]:checked").val(),
+        $("input[name=question2]:checked").val(),
+        $("input[name=question3]:checked").val(),
+        $("input[name=question4]:checked").val(),
+        $("input[name=question5]:checked").val(),
+        $("input[name=question6]:checked").val(),
+        $("input[name=question7]:checked").val(),
+        $("input[name=question8]:checked").val(),
+        $("input[name=question9]:checked").val(),
+        $("input[name=question10]:checked").val()
+        ]
+      };
+   
+
+      console.log("User input html " , userInput);
+
+      $.post("/api/friends", userInput).done(function (data) {
+        $('#userMatch').html(data.matchName);
+        $("#userMatchImage").attr("src", data.matchPhoto);
+        // Pop open the modal dialog
+        $('#modal1').modal('open');
+      });
+
+    });
+
   </script>
-  
+
 </body>
+
 </html>

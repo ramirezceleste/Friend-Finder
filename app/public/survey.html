@@ -256,7 +256,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-            <h4 class="modal-title" id="userMatch"> </h4>
+            <h4 class="modal-title" id="userMatch">Answer at least something, please!</h4>
           </div>
           <div class="modal-body text-center">
             <img id="userMatchImage" src="" style="max-height:350px;" />
@@ -305,7 +305,7 @@
 
 
       $.post("/api/friends", userInput).done(function (data) {
-        $('#userMatch').append("Your best match is...... " + data.matchName);
+        $('#userMatch').text("Your best match is...... " + data.matchName);
         $("#userMatchImage").attr("src", data.matchPhoto);
         console.log(data.matchPhoto);
       });

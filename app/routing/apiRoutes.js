@@ -15,16 +15,19 @@ module.exports = function (app) {
         var userAnswers = userInput.scores;
         console.log("User answers " + userAnswers);
 
-        var matchName = "";
-        var matchPhoto = "";
+        var matchName = " ";
+        var matchPhoto = " ";
         var totalDifference = 1000;
+
+
 
         for (var i = 0; i < friendsData.length; i++) {
             var diff = 0;
 
+
             for (var x = 0; x < userAnswers.length; x++) {
                 diff += Math.abs(friendsData[i].scores[x] - userAnswers[x]);
-                
+
             }
 
             if (diff < totalDifference) {
@@ -32,12 +35,12 @@ module.exports = function (app) {
                 console.log("total difference: " + totalDifference);
                 matchName = friendsData[i].name;
                 matchPhoto = friendsData[i].photo;
-            }
+            } 
 
         }
 
         friendsData.push(userInput);
-        res.json({status: 'OK', matchName: matchName, matchPhoto: matchPhoto});
+        res.json({ status: 'OK', matchName: matchName, matchPhoto: matchPhoto });
 
     });
 

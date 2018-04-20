@@ -1,7 +1,7 @@
 var friendsArray = [
     {
-        "name":"Maluma",
-        "photo":"http://static1.squarespace.com/static/57a5229820099e8bfa2664b8/57add1899de4bb40287157ac/5a7bcbce24a6941406408ac6/1518062936070/Maluma4_HQ2.jpg?format=1000w",
+        "name":"Michael Kelso",
+        "photo":"https://vignette.wikia.nocookie.net/the-70s/images/d/de/Kelso2.jpg/revision/latest/scale-to-width-down/299?cb=20110327215445",
         "scores":[
             5,
             1,
@@ -16,8 +16,8 @@ var friendsArray = [
         ]
       },
       {
-        "name":"Selena Gomez",
-        "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg",
+        "name":"Donna Pinciotti",
+        "photo":"http://images6.fanpop.com/image/photos/36100000/That-70-s-Show-image-that-70s-show-36141273-300-450.jpg",
         "scores":[
             3,
             2,
@@ -32,8 +32,8 @@ var friendsArray = [
           ]
       },
       {
-        "name":"Cole Sprouse",
-        "photo":"https://pbs.twimg.com/profile_images/826302313014779905/yArfSy1J_400x400.jpg",
+        "name":"Eric Forman",
+        "photo":"https://upload.wikimedia.org/wikipedia/en/thumb/0/01/EricForman.jpg/220px-EricForman.jpg",
         "scores":[
             2,
             3,
@@ -48,8 +48,8 @@ var friendsArray = [
           ]
       },
       {
-        "name":"Alexandra Daddario",
-        "photo":"http://hbimg.b0.upaiyun.com/d69b9179b446643ea9d636810e7c7e0eeb17477c76fe2-LcxjyL",
+        "name":"Jackie Burkhart",
+        "photo":"https://i.imgur.com/4KiNRDG.jpg?1",
         "scores":[
             1,
             1,
@@ -64,8 +64,8 @@ var friendsArray = [
           ]
       },
       {
-        "name":"Diego Boneta",
-        "photo":"http://www1.pictures.zimbio.com/pc/Diego+Boneta+Celebs+Rock+Ages+Premiere+pA73XBS6qbjl.jpg",
+        "name":"Fez",
+        "photo":"https://i.pinimg.com/originals/49/fe/ef/49feef127a9df996d61e8417e97be1ee.jpg",
         "scores":[
             5,
             5,
@@ -80,8 +80,8 @@ var friendsArray = [
           ]
       },
       {
-        "name":"Jennifer Lawrence",
-        "photo":"http://www.images99.com/i99/06/135569/Jennifer%20Lawrence%20Smiling.jpg",
+        "name":"Steven Hyde",
+        "photo":"https://i.imgur.com/j99E1oi.jpg?1",
         "scores":[
             4,
             4,

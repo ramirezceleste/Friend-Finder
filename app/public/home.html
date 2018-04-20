@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
@@ -8,56 +9,80 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 
-  <!-- <style>
-      .jumbotron {
-    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/30073360_1462566920522422_7114120661199602437_o.jpg?_nc_cat=0&oh=7e493a967901478684b7ef2cfcaccaed&oe=5B63F5D9");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 80px;
-    padding-top: 80px;
-  } */
+  <style>
+    body {
+      background-color: white;
+    }
 
-  .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(185, 221, 216);
-    color: white;
-    text-align: center;
-    padding-bottom: 12px;
-    padding-top: 12px;
-}
-  </style> -->
+    .jumbotron {
+      background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/30171347_1462555553856892_1065367517307797324_o.jpg?_nc_cat=0&oh=0792584fd32dac86530e2731c82d9306&oe=5B6FA06E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 200px;
+      padding-top: 200px;
+    }
+
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(185, 220, 221);
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+
+    button {
+      background-color: #b9dcdd !important;
+    }
+  </style>
 
 </head>
+
 <body>
 
-<div class="container">
-  
+  <div class="container">
+
     <div class="jumbotron">
-      <a href="/survey"><button class="btn btn-primary btn-lg"> Survey</button></a>
+      <!-- <a href="/survey"><button class="btn btn-default btn-lg">Survey Time</button></a> -->
     </div>
-<!-- 
-    <footer class="footer">
-        <div class="footer__copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <hp>
-  Friend Finder
-                </hp>
-              </div>
-            </div>
+
+    <div class="col-md-12 text-center">
+      <h3 class="text-center">Answer a few basic questions.</h3>
+      <h3>Then find the friend with the greatest compatibility!</h3>
+      <a href="/survey">
+        <button class="btn btn-default btn-lg">Survey</button>
+      </a>
+      <br>
+      <br>
+      <br>
+
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="footer__copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-left">
+              <p>
+                  <a href="/api/friends">API Friends List</a> |
+                  <a href="https://github.com/ramirezceleste/Friend-Finder">GitHub Repo</a>
+              </p>
           </div>
         </div>
-      </footer> -->
-  
-</div> 
+      </div>
+    </div>
+  </footer>
 
   <script type="text/javascript">
-  
+
   </script>
 
 </body>
+
 </html>

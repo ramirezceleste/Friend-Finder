@@ -9,27 +9,41 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <!-- <style>
-      .jumbotron {
-    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/30073360_1462566920522422_7114120661199602437_o.jpg?_nc_cat=0&oh=7e493a967901478684b7ef2cfcaccaed&oe=5B63F5D9");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
+  <style>
+    .jumbotron {
+      background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/30073360_1462566920522422_7114120661199602437_o.jpg?_nc_cat=0&oh=7e493a967901478684b7ef2cfcaccaed&oe=5B63F5D9");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 80px;
+      padding-top: 80px;
+    }
 
-  .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(185, 221, 216);
-    color: white;
-    text-align: center;
-    padding-bottom: 12px;
-    padding-top: 12px;
-}
-  </style> -->
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #b9dcdd;
+      color: black;
+      text-align: center;
+      padding-bottom: 12px;
+      padding-top: 12px;
+    }
+
+    .panel-heading {
+      background-color: #b9dcdd !important;
+    }
+
+    button {
+      background-color: #b9dcdd !important;
+    }
+
+    h3 {
+      background-color: #b9dcdd !important;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
 
 </head>
 
@@ -46,7 +60,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              <strong>Survey</strong>
+              <strong>About You</strong>
             </h3>
           </div>
           <div class="panel-body">
@@ -58,146 +72,156 @@
               </div>
 
               <div class="form-group">
-                <label for="userPhoto">Photo</label>
+                <label for="userPhoto">Photo (URL link)</label>
                 <input type="text" class="form-control" id="userPhoto">
               </div>
 
               <div class="form-group">
-                <h3>Question 1</h3>
+                <h3 class="text-center">Question 1</h3>
                 <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
                 <br>
                 <form class="options" required>
-                  <input class="option" type="radio" value="1" name="question1"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question1"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question1"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question1"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question1"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question1"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question1"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question1"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question1"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 2</h3>
+                <h3 class="text-center">Question 2</h3>
                 <label for="question1">Generally speaking, you rely more on your experience than your imagination.</label>
                 <br>
                 <form class="options" id="question2" required>
-                  <input class="option" type="radio" value="1" name="question2"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question2"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question2"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question2"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question2"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question2"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question2"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question2"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question2"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 3</h3>
+                <h3 class="text-center">Question 3</h3>
                 <label for="question1">You find it easy to stay relaxed and focused even when there is some pressure.</label>
                 <br>
                 <form class="options" id="question3" required>
-                  <input class="option" type="radio" value="1" name="question3"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question3"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question3"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question3"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question3"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question3"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question3"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question3"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question3"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 4</h3>
+                <h3 class="text-center">Question 4</h3>
                 <label for="question1">You rarely do something just out of sheer curiosity.</label>
                 <br>
                 <form class="options" id="question4" required>
-                  <input class="option" type="radio" value="1" name="question4"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question4"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question4"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question4"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question4"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question4"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question4"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question4"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question4"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 5</h3>
+                <h3 class="text-center">Question 5</h3>
                 <label for="question1">People can rarely upset you.</label>
                 <br>
                 <form class="options" id="question5" required>
-                  <input class="option" type="radio" value="1" name="question5"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question5"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question5"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question5"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question5"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question5"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question5"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question5"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question5"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 6</h3>
+                <h3 class="text-center">Question 6</h3>
                 <label for="question1">It is often difficult for you to relate to other people’s feelings.</label>
                 <br>
                 <form class="options" id="question6" required>
-                  <input class="option" type="radio" value="1" name="question6"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question6"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question6"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question6"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question6"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question6"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question6"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question6"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question6"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 7</h3>
+                <h3 class="text-center">Question 7</h3>
                 <label for="question1">In a discussion, truth should be more important than people’s sensitivities.
                 </label>
                 <br>
                 <form class="options" id="question7" required>
-                  <input class="option" type="radio" value="1" name="question7"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question7"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question7"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question7"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question7"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question7"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question7"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question7"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question7"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 8</h3>
+                <h3 class="text-center">Question 8</h3>
                 <label for="question1">You rarely get carried away by fantasies and ideas.</label>
                 <br>
                 <form class="options" id="question8" required>
-                  <input class="option" type="radio" value="1" name="question8"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question8"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question8"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question8"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question8"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question8"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question8"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question8"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question8"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 9</h3>
+                <h3 class="text-center">Question 9</h3>
                 <label for="question1">You think that everyone’s views should be respected regardless of whether they are supported by facts or
                   not.
                 </label>
                 <br>
                 <form class="options" id="question9" required>
-                  <input class="option" type="radio" value="1" name="question9"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question9"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question9"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question9"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question9"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question9"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question9"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question9"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question9"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
               <div class="form-group">
-                <h3>Question 10</h3>
+                <h3 class="text-center">Question 10</h3>
                 <label for="question1">You feel more energetic after spending time with a group of people.</label>
                 <br>
                 <form class="options" id="question10" required>
-                  <input class="option" type="radio" value="1" name="question10"> &nbsp; 1 &nbsp;
-                  <input class="option" type="radio" value="2" name="question10"> &nbsp; 2 &nbsp;
-                  <input class="option" type="radio" value="3" name="question10"> &nbsp; 3 &nbsp;
-                  <input class="option" type="radio" value="4" name="question10"> &nbsp; 4 &nbsp;
+                  &nbsp;
+                  <input class="option" type="radio" value="1" name="question10"> &nbsp; 1 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="2" name="question10"> &nbsp; 2 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="3" name="question10"> &nbsp; 3 &nbsp; &nbsp;
+                  <input class="option" type="radio" value="4" name="question10"> &nbsp; 4 &nbsp; &nbsp;
                   <input class="option" type="radio" value="5" name="question10"> &nbsp; 5 &nbsp;
                 </form>
               </div>
 
             </form>
-            <div class="text-left">
-              <button type="submit" class="btn btn-primary btn-md" id="submit" data-toggle="modal" data-target="#myModal"> Submit</button>
+            <div class="text-center">
+              <button type="submit" class="btn btn-default btn-lg" id="submit" data-toggle="modal" data-target="#myModal"> Submit</button>
             </div>
           </div>
         </div>
@@ -205,67 +229,75 @@
     </div>
   </div>
 
-  <!-- <footer class="footer">
-      <div class="footer__copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <hp>
-Friend Finder
-              </hp>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> -->
 
-    <div class="container">
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-md">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title" id="userMatch"> </h4>
-            </div>
-            <div class="modal-body text-center">
-              <img id="userMatchImage" src="" style="max-height:350px;"/>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+
+  <footer class="footer">
+    <div class="footer__copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-left">
+              <p>
+                  <a href="/api/friends">API Friends List</a> |
+                  <a href="https://github.com/ramirezceleste/Friend-Finder">GitHub Repo</a>
+              </p>
           </div>
-          
         </div>
       </div>
-      
     </div>
-    
+  </footer>
+
+
+  <div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-md">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <h4 class="modal-title" id="userMatch"> </h4>
+          </div>
+          <div class="modal-body text-center">
+            <img id="userMatchImage" src="" style="max-height:350px;" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="quizAgain">Take survey again!</button>
+            <a href="/home">
+              <button class="btn btn-default">Home</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
 
   <script type="text/javascript">
 
     $('#submit').on('click', function (event) {
       event.preventDefault();
+
       // Gather user inputs
       var userInput = {
         name: $('#userName').val().trim(),
         photo: $('#userPhoto').val().trim(),
         scores: [
-        $("input[name=question1]:checked").val(),
-        $("input[name=question2]:checked").val(),
-        $("input[name=question3]:checked").val(),
-        $("input[name=question4]:checked").val(),
-        $("input[name=question5]:checked").val(),
-        $("input[name=question6]:checked").val(),
-        $("input[name=question7]:checked").val(),
-        $("input[name=question8]:checked").val(),
-        $("input[name=question9]:checked").val(),
-        $("input[name=question10]:checked").val()
+          $("input[name=question1]:checked").val(),
+          $("input[name=question2]:checked").val(),
+          $("input[name=question3]:checked").val(),
+          $("input[name=question4]:checked").val(),
+          $("input[name=question5]:checked").val(),
+          $("input[name=question6]:checked").val(),
+          $("input[name=question7]:checked").val(),
+          $("input[name=question8]:checked").val(),
+          $("input[name=question9]:checked").val(),
+          $("input[name=question10]:checked").val()
         ]
       };
-   
+
 
       $.post("/api/friends", userInput).done(function (data) {
         $('#userMatch').append("Your best match is...... " + data.matchName);
@@ -273,6 +305,13 @@ Friend Finder
         console.log(data.matchPhoto);
       });
 
+
+    }); 
+ 
+
+    $("#quizAgain").on("click", function (event) {
+      location.reload();
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
     });
 
   </script>

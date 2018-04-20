@@ -280,6 +280,11 @@
     $('#submit').on('click', function (event) {
       event.preventDefault();
 
+       if ($("#userName").val() === "" || $("#userPhoto").val() === ""){
+            alert("Please answer all questions!");
+            end();
+        } else {
+
       // Gather user inputs
       var userInput = {
         name: $('#userName').val().trim(),
@@ -304,15 +309,19 @@
         $("#userMatchImage").attr("src", data.matchPhoto);
         console.log(data.matchPhoto);
       });
-
+}
 
     }); 
  
 
     $("#quizAgain").on("click", function (event) {
+      end();
+    });
+
+    function end() {
       location.reload();
       document.body.scrollTop = document.documentElement.scrollTop = 0;
-    });
+    }
 
   </script>
 
